@@ -4,3 +4,21 @@
   "multer": "^1.4.2",
   "cors": "^2.8.5"
 }
+{
+  "name": "patient-record-backendr",
+  "version": "1.0.0",
+  "description": "A backend for managing patient records",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0",
+    "multer": "^1.4.2",
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
