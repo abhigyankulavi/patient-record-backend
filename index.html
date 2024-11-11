@@ -3,10 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Render Project</title>
+  <title>Patient Records</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello from the backend!</h1>
-  <p>This is a simple HTML-based backend deployed on Render.</p>
+  <div class="container">
+    <h1>Patient Records</h1>
+    <form id="patient-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form-group">
+        <label for="allergies">Allergies:</label>
+        <input type="text" id="allergies" name="allergies">
+      </div>
+      <div class="form-group">
+        <label for="chronic-conditions">Chronic Conditions:</label>
+        <input type="text" id="chronic-conditions" name="chronic-conditions">
+      </div>
+      <button type="submit" class="btn">Save Patient</button>
+    </form>
+    <div id="patient-list">
+      <h2>Patient List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Contact</th>
+            <th>Address</th>
+            <th>Allergies</th>
+            <th>Chronic Conditions</th>
+          </tr>
+        </thead>
+        <tbody id="patient-table-body"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
